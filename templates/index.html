@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+ 
+    <ul>
+        {% for entrada in entradas %}
+            <li><h2>{{entrada.titulo}}</h2></li>
+            <li><h2>{{entrada.texto}}</h2></li>
+        {% else %}
+            <P>Nenhum post ainda!!!</P>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
